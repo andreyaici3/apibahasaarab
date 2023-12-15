@@ -1,7 +1,7 @@
 <?php
 
 
-$conn = mysqli_connect("localhost", "root", "", "b_arab");
+$conn = mysqli_connect("localhost", "drea3825_andrey4307", "ITClub430724", "drea3825_bahasaarab");
 
 
 function sendResponse($status_code, $message, $data = []){
