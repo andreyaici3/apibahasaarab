@@ -1,5 +1,5 @@
 <?php
-include '../core.php';
+include '../../core.php';
 if ($_POST) {
     $result = login(@$_POST["x-uname"], $_POST['x-pass']);
     if (mysqli_num_rows($result) > 0){

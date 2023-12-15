@@ -1,5 +1,5 @@
 <?php
-    include '../core.php';
+    include '../../core.php';
 if (@$_POST["x-id"]) {
     $nilai = $_POST['x-nilai'];
     $bab = $_POST["x-bab"];

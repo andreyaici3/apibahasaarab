@@ -1,9 +1,7 @@
 <?php
 
 
-$conn = mysqli_connect("localhost", "drea3825_andrey4307", "ITClub430724", "drea3825_bahasaarab");
-
-
+include "conn.php";
 function sendResponse($status_code, $message, $data = []){
     header('Content-Type: application/json; charset=utf-8');
 
