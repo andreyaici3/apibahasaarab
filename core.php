@@ -22,3 +22,12 @@ function login($username = '', $password = ''){
 
     return $qry;
 }
+
+function getDetailNilai($idSiswa){
+    global $conn;
+    $str = "SELECT nilai.*, siswa.*, nilai.id AS id_nilai, siswa.id AS id_siswa FROM siswa, nilai WHERE nilai.id_siswa = siswa.id AND siswa.id = $idSiswa";
+    $query = mysqli_query($conn, $str);
+    $data = mysqli_fetch_assoc($query);
+
+    return $data;
+}
