@@ -2,6 +2,18 @@
 
 
 include "conn.php";
+
+$mode = 2;
+
+//1 => development
+//2 => release
+
+if ($mode == 1){
+    $base_url = "/aplikasibahasa";
+} else {
+    $base_url = "/";
+}
+
 function sendResponse($status_code, $message, $data = []){
     header('Content-Type: application/json; charset=utf-8');
 
@@ -30,4 +42,22 @@ function getDetailNilai($idSiswa){
     $data = mysqli_fetch_assoc($query);
 
     return $data;
+}
+
+function resetNilai($idSiswa, $qry){
+    global $conn;
+    $query = "UPDATE nilai SET $qry WHERE id_siswa='$idSiswa'";
+
+    mysqli_query($conn, $query );
+
+    return mysqli_affected_rows($conn);
+}
+
+function alert($message, $url){
+    return "
+            <script type=text/javascript> 
+                alert ('". $message ."');
+                window.location.href = '".$url ."';
+            </script>
+        ";
 }
