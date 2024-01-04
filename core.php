@@ -10,8 +10,10 @@ $mode = 2;
 
 if ($mode == 1){
     $base_url = "/aplikasibahasa";
+    
 } else {
     $base_url = "/";
+    error_reporting(0);
 }
 
 function sendResponse($status_code, $message, $data = []){
