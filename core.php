@@ -2,11 +2,9 @@
 
 
 include "conn.php";
+include "config.php";
 
-$mode = 1;
-
-//1 => development
-//2 => release
+$mode = PRODUCTION;
 
 if ($mode == 1){
     $base_url = "/aplikasibahasa/";
