@@ -93,7 +93,7 @@ $conn;
                           <span class="text-secondary text-xs font-weight-bold"><?= $siswa['username'] ?></span>
                         </td>
                         <td class="text-sm">
-                          <a href="<?= $base_url ?>/detailnilai.php?id=<?= $siswa["id"] ?>" class="btn btn-success btn-xs">Detail</a>
+                          <a href="<?= $base_url ?>detailnilai.php?id=<?= $siswa["id"] ?>" class="btn btn-success btn-xs">Detail</a>
                           <a href="/hapussiswa.php?id=<?= $siswa["id"] ?>" class="btn btn-danger btn-xs">Hapus</a>
                         </td>
                       </tr>
