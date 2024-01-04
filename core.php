@@ -3,13 +3,13 @@
 
 include "conn.php";
 
-$mode = 2;
+$mode = 1;
 
 //1 => development
 //2 => release
 
 if ($mode == 1){
-    $base_url = "/aplikasibahasa";
+    $base_url = "/aplikasibahasa/";
     
 } else {
     $base_url = "/";
