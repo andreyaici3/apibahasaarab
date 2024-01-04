@@ -87,7 +87,7 @@ if ($id) {
 
 
                                                 <td class="text-sm">
-                                                    <a href="<?= $base_url . "/reset.php?id=" . $id ?>&bab=<?= $i ?>" onclick="return confirm('Yakin Ingin Hapus Data?')" class="btn btn-danger btn-xs">Reset</a>
+                                                    <a href="<?= $base_url . "reset.php?id=" . $id ?>&bab=<?= $i ?>" onclick="return confirm('Yakin Ingin Hapus Data?')" class="btn btn-danger btn-xs">Reset</a>
                                                 </td>
                                             </tr>
 
